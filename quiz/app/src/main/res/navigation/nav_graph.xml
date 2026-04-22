@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ekran1Fragment">
+
+    <fragment
+        android:id="@+id/ekran1Fragment"
+        android:name="com.example.quiz.Ekran1"
+        android:label="Ekran1">
+
+        <action
+            android:id="@+id/action_ekran1Fragment_to_ekran2"
+            app:destination="@id/ekran2" />
+    </fragment>
+    <fragment
+        android:id="@+id/ekran2"
+        android:name="com.example.quiz.Ekran2"
+        android:label="fragment_ekran2"
+        tools:layout="@layout/fragment_ekran2" />
+
+
+</navigation>
